@@ -6,7 +6,7 @@ import { Pelicula } from '../../Interfaces/pelicula';
 import { PeliculaService } from '../../Services/pelicula.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-pelicula-list',
   standalone: true,
   imports: [
  //   RouterOutlet, 
@@ -16,7 +16,7 @@ import { PeliculaService } from '../../Services/pelicula.service';
   templateUrl: './pelicula-list.component.html',
   styleUrls: ['./pelicula-list.component.css']
 })
-export class AppComponent implements OnInit{
+export class PeliculaListComponent implements OnInit{
   listaPeliculas: Pelicula[]=[];
 
 
