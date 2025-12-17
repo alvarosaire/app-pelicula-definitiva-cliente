@@ -1,0 +1,29 @@
+<div class="container mt-5 pt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center mb-4">
+      <h2 class="display-4">🍿 Cartelera Cliente</h2>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let pelicula of listaPeliculas">
+        <div class="card h-100 shadow-sm border-0">
+          <img [src]="pelicula.imagen" class="card-img-top" alt="Poster de {{pelicula.titulo}}">
+          
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">{{pelicula.titulo}}</h5>
+            <p class="card-text text-muted small">{{pelicula.descripcion}}</p>
+            
+            <div class="d-grid gap-2 mt-3">
+              <button class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-calendar-event me-2"></i>{{pelicula.fechaEstreno}}
+              </button>
+              <button class="btn btn-warning btn-sm text-dark fw-bold">
+                <i class="bi bi-star-fill me-2"></i>Puntuación: {{pelicula.estrellas}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

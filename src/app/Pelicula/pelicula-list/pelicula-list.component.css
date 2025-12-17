@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.movie-poster {
+  height: 400px;         /* Ajusta la altura que prefieras */
+  object-fit: cover;     /* Esto reemplaza al background-size: cover */
+  object-position: center; 
+  width: 100%;
+}
+
+.card {
+  transition: transform 0.2s; /* Un efecto extra para que se vea mejor */
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
